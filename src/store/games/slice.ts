@@ -27,15 +27,13 @@ export const fetchGamesAsync = createAsyncThunk(
   "games/fetchGames",
   async () => {
     const response = await fetchGames()
-    // The value we return becomes the `fulfilled` action payload
     return response
   },
 )
 
-export const teamSlice = createSlice({
-  name: "team",
+export const gamesSlice = createSlice({
+  name: "game",
   initialState,
-  // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
     addTeamPlayer: (state, action: PayloadAction<PlayerData>) => {
       const { game, team_name, ...rest } = action.payload
@@ -61,8 +59,8 @@ export const teamSlice = createSlice({
   },
 })
 
-export const { addTeamPlayer, editTeamPlayer } = teamSlice.actions
+export const { addTeamPlayer, editTeamPlayer } = gamesSlice.actions
 export const getGamesData = (state: RootState) => state.games.data
 export const getGamesStatus = (state: RootState) => state.games.status
 
-export default teamSlice.reducer
+export default gamesSlice.reducer
