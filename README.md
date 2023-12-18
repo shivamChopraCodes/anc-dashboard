@@ -1,17 +1,13 @@
-# vite-template-redux
+# Games Dashboard
 
-Uses [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [React Testing Library](https://github.com/testing-library/react-testing-library) to create a modern [React](https://react.dev/) app compatible with [Create React App](https://create-react-app.dev/)
+Brief description or introduction to your project.
 
-```sh
-npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
-```
+## Technologies Used
 
-## Goals
-
-- Easy migration from Create React App or Vite
-- As beginner friendly as Create React App
-- Optimized performance compared to Create React App
-- Customizable without ejecting
+- [Vite](https://vitejs.dev/): A fast build tool for modern web development.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework.
+- [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript.
+- [Redux Toolkit](https://redux-toolkit.js.org/): The official, opinionated, batteries-included toolset for efficient Redux development following **Flux** model for data flow.
 
 ## Scripts
 
@@ -19,6 +15,10 @@ npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
 - `build` - build for production
 - `preview` - locally preview production build
 - `test` - launch test runner
+
+## Screenshot
+
+![Screenshot of dashboard web app.](/src/assets/screenshot.png)
 
 ## Inspiration
 
